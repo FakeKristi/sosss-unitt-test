@@ -36,8 +36,11 @@ class DigitalProductTest {
 
         DigitalProduct newDigitalProduct = new DigitalProduct(name, description, price, downloadUrl);
 
-        assertAll(
-
+        assertAll("Verify product attributes",
+                () -> assertEquals(name, newDigitalProduct.getName(), "name should match"),
+                () -> assertEquals(description, newDigitalProduct.getDescription(), "Description should match"),
+                () -> assertEquals(price, newDigitalProduct.getPrice(), "Price should match"),
+                () -> assertEquals(downloadUrl, newDigitalProduct.getDownloadUrl(), "Download url should match")
         );
     }
 
