@@ -1,10 +1,10 @@
-package com.example.eshop;
+package com.example.eshop.cart;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class CartItemTest {
+public class CartItemMaasTest {
 
     @Test
     void newProduct() {
